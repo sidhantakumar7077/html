@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <button class="butt on" onclick="bulbOn()">on</button>
+    <button class="butt off" onclick="bulbOff()">off</button>
+
+    <input type="range" min="1" max="100" value="50" onchange="bulbrange()" class="slider" id="myRange">
+    <div class="bulb">
+        <div class="bulb-inner">
+
+
+            <img src="bulb1-off.jpg" id="bulb">
+        </div>
+
+    </div>
+</body>
+<script>
+    function bulbOn() {
+        document.getElementById("bulb").src = "bulb1-on.jpg";
+
+    }
+
+    function bulbOff() {
+        document.getElementById("bulb").src = "bulb1-off.jpg";
+
+    }
+
+    function bulbrange() {
+        var x = document.getElementById("myRange").value;
+        var y = x / 100
+            //alert("light voltage" + " " + y);
+        document.getElementById("bulb").style.opacity = y;
+    }
+</script>
