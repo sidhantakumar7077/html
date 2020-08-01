@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="style.css">
+<img src="image22.png">
+<div class="right">
+    <a href="https://www.facebook.com/jeebendu2010">
+        <img src="facebook.png">
+    </a>
+</div>
+<img class="tiwtter2.png" class="w3-circle" style="widows:10%">
+<div class="right">
+    <a href="https://www.twitter.com">
+        <img src="tiwtter2.png" class="w3-circle" style="width:20">
+    </a>
+</div>
+<div class="menu">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="student.html">student</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="calculator.html">calculator</a></li>
+        <li><a href="area.html">area</a></li>
+        <li><a class="active" href="square.html">square</a></li>
+        <li><a href="lipu.html">lipu</a></li>
+    </ul>
+</div>
+
+
+<label for="fside">First side:</label>
+<input type="number" id="x"><br><br>
+<label for="sside">second side:</label>
+<input type="number" id="y"><br><br>
+<input type="submit" value="area" onclick="area()">
+<p id="area"> </p>
+<script>
+    function area() {
+        var a = document.getElementById("x").value;
+        var b = document.getElementById("y").value;
+        var s = parseInt(a) * parseInt(b);
+        document.getElementById("area").innerHTML = "area is " + s;
+    }
+</script>

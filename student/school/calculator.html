@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="style.css">
+<img src="image22.png">
+<div class="right">
+    <a href="https://www.facebook.com/jeebendu2010">
+        <img src="facebook.png">
+    </a>
+</div>
+<img class="tiwtter2.png" class="w3-circle" style="widows:10%">
+<div class="right">
+    <a href="https://www.twitter.com">
+        <img src="tiwtter2.png" class="w3-circle" style="width:20">
+    </a>
+</div>
+<div class="menu">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="student.html">student</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="calculator.html">calculator</a></li>
+        <li><a href="area.html">area</a></li>
+        <li><a href="square.html">square</a></li>
+        <li><a href="lipu.html">lipu</a></li>
+    </ul>
+</div>
+
+
+<label for="fnumber">First number:</label>
+<input type="number" id="x"><br><br>
+<label for="anumber">another name:</label>
+<input type="number" id="y"><br><br>
+<input type="submit" value="add" onclick="add()">
+<input type="submit" value="multiplication" onclick="multiplication()">
+<input type="submit" value="substraction" onclick="substraction()">
+<input type="submit" value="divison" onclick="divison()">
+
+
+<script>
+    function add() {
+        var a = document.getElementById("x").value;
+        var b = document.getElementById("y").value;
+        var r = parseInt(a) + parseInt(b);
+        alert("the result is" + " " + r).value;
+    }
+</script>
+
+
+<script>
+    function multiplication() {
+        var a = document.getElementById("x").value;
+        var b = document.getElementById("y").value;
+        var r = parseInt(a) * parseInt(b);
+        alert("the result is" + " " + r).value;
+    }
+</script>
+
+<script>
+    function substraction() {
+        var a = document.getElementById("x").value;
+        var b = document.getElementById("y").value;
+        if (a => b) {
+            var r = parseInt(a) - parseInt(b);
+            alert("the result is" + " " + r).value;
+        } else {
+            alert("sorry this calculation is not possible")
+        }
+    }
+</script>
+
+<script>
+    function divison() {
+        var a = document.getElementById("x").value;
+        var b = document.getElementById("y").value;
+        var r = parseInt(a) / parseInt(b);
+        alert("the result is" + " " + r).value;
+    }
+</script>

@@ -1,0 +1,84 @@
+.x {
+    background-color: green;
+    color: white;
+}
+
+.y {
+    background-color: pink;
+    color: yellow;
+}
+
+.z {
+    color: green;
+}
+
+h1 {
+    color: yellow;
+}
+
+p {
+    color: green;
+}
+
+.p {
+    color: red;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+.menu li {
+    float: left;
+}
+
+.left {
+    float: left;
+    padding-right: 50px;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+
+/*change the link color to #pink on hover*/
+
+li a:hover {
+    background-color: #111;
+}
+
+.right {
+    float: right;
+    padding-left: 100px;
+}
