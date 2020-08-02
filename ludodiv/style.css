@@ -1,0 +1,76 @@
+.contain {
+    width: 600px;
+    height: 600px;
+    background-color: rgb(252, 252, 252);
+}
+
+.row1 {
+    height: 39%;
+}
+
+.rowmid {
+    height: 20%;
+}
+
+.player {
+    height: 237px;
+}
+
+.player1 {
+    background-color: red;
+}
+
+.player2 {
+    background-color: blue;
+}
+
+.player3 {
+    background-color: green;
+}
+
+.player4 {
+    background-color: yellow;
+}
+
+.inbox {
+    background-color: white;
+    height: 180px;
+    margin: 25px 23px 25px 25px;
+}
+
+.danabox {
+    border: 1px solid black;
+    margin: 20px;
+    height: 45px;
+    width: 45px;
+}
+
+.danar {
+    background-color: red;
+}
+
+.danab {
+    background-color: blue;
+}
+
+.danag {
+    background-color: green;
+}
+
+.danay {
+    background-color: yellow;
+}
+
+.danarun {
+    border: 1px solid black;
+    height: 47px;
+}
+
+.danarun2 {
+    border: 1px solid black;
+    height: 40px;
+}
+
+.danarun2.med {
+    padding: 15.6px;
+}
