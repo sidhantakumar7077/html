@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ludo Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="body">
+
+    <div class="container-fluid contain">
+
+        <div class="row ">
+            <div class="col-sm-5 player1">
+                <div class="player-name">player 1</div>
+                <div class="inner-box player-top">
+                    <div class="row">
+                        <div class="col-sm-6 card">
+                            <div class="dana dana1 dana-left  "></div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="dana dana1 dana-right"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="dana dana1 dana-left"></div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="dana dana1 dana-right"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-2 ">
+                <div class="row">
+                    <div class="col-sm-4 danarun card ">
+
+                    </div>
+                    <div class="col-sm-4 danarun card ">
+
+                    </div>
+                    <div class="col-sm-4 danarun card">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 danarun card star">
+
+                        <img src="green-s1.png" class="img-responsive">
+
+
+                    </div>
+                    <div class="col-sm-4 danarun dana2 card ">
+                        <div class="danaplace">
+
+
+                        </div>
+                    </div>
+                    <div class="col-sm-4 danarun card star">
+
+                        <img src=" yellow-s1.png " class="img-responsive ">
+
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-4 danarun card ">
+                        <div class="danaplace "></div>
+                    </div>
+                    <div class="col-sm-4 danarun dana2 card ">
+                        <div class="danaplace "></div>
+                    </div>
+                    <div class="col-sm-4 danarun card ">
+                        <div class="danaplace "></div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-4 danarun card ">
+                        <div class="danaplace "></div>
+                    </div>
+                    <div class="col-sm-4 danarun dana2 card ">
+                        <div class="danaplace "></div>
+                    </div>
+                    <div class="col-sm-4 danarun card ">
+                        <div class="danaplace "></div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-4 danarun card ">
+                        <div class="danaplace "></div>
+                    </div>
+                    <div class="col-sm-4 danarun dana2 card ">
+                        <div class="danaplace "></div>
+                    </div>
+                    <div class="col-sm-4 danarun card ">
+                        <div class="danaplace "></div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-4 danarun card ">
+
+                    </div>
+                    <div class="col-sm-4 danarun dana2 card ">
+
+                    </div>
+                    <div class="col-sm-4 danarun card ">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 player2 ">
+
+                <div class="player-name ">player 2</div>
+                <div class="inner-box player-top ">
+                    <div class="row ">
+                        <div class="col-sm-6 ">
+                            <div class="dana dana2 dana-left "></div>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <div class="dana dana2 dana-right "></div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-sm-6 ">
+                            <div class="dana dana2 dana-left "></div>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <div class="dana dana2 dana-right "></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-5 ">
+                <div class="row ">
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">q</div>
+                    </div>
+                    <div class="col-sm-2 danarun player1 star">
+                        <img src="green-s1.png " class="img-responsive ">
+                    </div>
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">q</div>
+                    </div>
+                    <div class="col-sm-2 danarun star">
+                        <div class="danaplace ">q</div>
+                    </div>
+                    <div class="col-sm-2 danarun ">
+                        <img src="arrow-end.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">q</div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">sdf</div>
+                    </div>
+                    <div class="col-sm-2 danarun player1 ">
+                        <div class="danaplace ">sdf</div>
+                    </div>
+                    <div class="col-sm-2 danarun player1 ">
+                        <div class="danaplace ">sdf</div>
+                    </div>
+                    <div class="col-sm-2 danarun player1 ">
+                        <div class="danaplace ">sdf</div>
+                    </div>
+                    <div class="col-sm-2 danarun player1 ">
+                        <div class="danaplace ">sdf</div>
+                    </div>
+                    <div class="col-sm-2 danarun player1 ">
+                        <div class="danaplace ">sdf</div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun star">
+                        <img src="blue-s1.png " class="img-responsive ">
+                    </div>
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-sm-2 ">
+                <div class="row ">
+                    <div class="col-sm-4 danarun ">sdf</div>
+                    <div class="col-sm-4 danarun ">
+
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-4 danarun ">sdf</div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-4 danarun ">
+                        <div class="danaplace ">qwer
+                        </div>
+                    </div>
+                    <div class="col-sm-4 p-0 ">
+                        <img src="Ludn2.png " class="img-responsive ">
+                    </div>
+                    <div class="col-sm-4 danarun ">
+                        <div class="danaplace ">qwer
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-4 danarun ">asd</div>
+                    <div class="col-sm-4 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-4 danarun ">jhgf</div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-5 ">
+                <div class="row ">
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun star">
+                        <img src="yellow-s1.png " class="img-responsive ">
+                    </div>
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+
+                </div>
+                <div class="row ">
+                    <div class="col-sm-2 danarun player4 ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun player4 ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun player4 ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun player4 ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun player4 ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+
+                </div>
+                <div class="row ">
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+                    <div class="col-sm-2 danarun player4 star">
+                        <img src="red-s1.png " class="img-responsive ">
+                    </div>
+                    <div class="col-sm-2 danarun ">
+                        <div class="danaplace ">qwer</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-5 player3 ">
+
+                <div class="inner-box player-bottom ">
+                    <div class="row ">
+                        <div class="col-sm-6 ">
+                            <div class="dana dana3 dana-left "></div>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <div class="dana dana3 dana-right "></div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-sm-6 ">
+                            <div class="dana dana3 dana-left "></div>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <div class="dana dana3 dana-right "></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-name ">player 3</div>
+
+            </div>
+            <div class="col-sm-2 ">
+                <div class="row ">
+                    <div class="col-sm-4 danarun ">
+                        <div class="danaplace ">12</div>
+                    </div>
+                    <div class="col-sm-4 danarun dana3 ">
+                        <div class="danaplace ">12</div>
+                    </div>
+                    <div class="col-sm-4 danarun ">
+                        <div class="danaplace ">12</div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-4 danarun ">
+                        <div class="danaplace ">as</div>
+                    </div>
+                    <div class="col-sm-4 danarun dana3 ">
+                        <div class="danaplace ">12</div>
+                    </div>
+                    <div class="col-sm-4 danarun ">
+                        <div class="danaplace ">12</div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-4 danarun ">
+                        <div class="danaplace ">12</div>
+                    </div>
+                    <div class="col-sm-4 danarun dana3 ">
+                        <div class="danaplace ">12</div>
+                    </div>
+                    <div class="col-sm-4 danarun ">
+                        <div class="danaplace ">12</div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-4 danarun ">
+                        <div class="danaplace ">12</div>
+                    </div>
+                    <div class="col-sm-4 danarun dana3 ">
+                        <div class="danaplace ">12</div>
+                    </div>
+                    <div class="col-sm-4 danarun star">
+                        <img src="red-s1.png " class="img-responsive ">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-4 danarun dana3 star">
+                        <img src="blue-s1.png " class="img-responsive ">
+                    </div>
+                    <div class="col-sm-4 danarun dana3 ">
+                        <div class="danaplace ">12</div>
+                    </div>
+                    <div class="col-sm-4 danarun ">
+                        <div class="danaplace ">12</div>
+
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-4 danarun ">
+                        <div class="danaplace ">12</div>
+                    </div>
+                    <div class="col-sm-4 danarun ">
+                        <div class="danaplace ">12</div>
+                    </div>
+                    <div class="col-sm-4 danarun ">
+                        <div class="danaplace ">12</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 player4 ">
+
+                <div class="inner-box player-bottom ">
+                    <div class="row ">
+                        <div class="col-sm-6 ">
+                            <div class="dana dana4 dana-left "></div>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <div class="dana dana4 dana-right "></div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-sm-6 ">
+                            <div class="dana dana4 dana-left "></div>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <div class="dana dana4 dana-right "></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-name ">player 4</div>
+
+            </div>
+        </div>
+    </div>
+
+    <img src="dice6.jpg" id="dice" onclick="playNow()">
+    <script>
+        function playNow() {
+            var x = Math.floor(Math.random() * 6);
+
+            var dice = x + 1;
+            document.getElementById("dice").src = "dice" + dice + ".jpg"
+        }
+    </script>
+
+</body>
+
+</html>

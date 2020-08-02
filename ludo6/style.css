@@ -1,0 +1,108 @@
+.card>div:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.body {
+    background-color: rgb(255, 255, 255);
+}
+
+.contain {
+    height: 600px;
+    margin: 0px 300px 0px 300px;
+}
+
+.player-name {
+    cursor: pointer;
+    text-decoration: darkblue;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.inner-box {
+    background-color: #fff;
+}
+
+.player-top {
+    margin: 0px 50px 50px 50px;
+}
+
+.player-bottom {
+    margin: 50px 50px 0px 50px;
+}
+
+.player1 {
+    background-color: green;
+}
+
+.player2 {
+    background-color: yellow;
+}
+
+.player3 {
+    background-color: blue;
+}
+
+.player4 {
+    background-color: rgb(219, 0, 0);
+}
+
+.dana {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}
+
+.dana1 {
+    background-color: green;
+}
+
+.dana2 {
+    background-color: yellow;
+}
+
+.dana3 {
+    background-color: blue;
+}
+
+.dana4 {
+    background-color: red;
+}
+
+.dana-left {
+    cursor: pointer;
+    float: left;
+    margin: 17px 20px 25px 20px;
+}
+
+.dana-right {
+    cursor: pointer;
+    float: right;
+    margin: 17px 20px 2px 10px;
+}
+
+.danarun {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    cursor: pointer;
+    border: 1px solid rgb(3, 0, 0);
+    height: 51px;
+}
+
+.danaplace {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.p-0 {
+    padding: 0px;
+}
+
+.danarun.star {
+    padding: 0px;
+}
