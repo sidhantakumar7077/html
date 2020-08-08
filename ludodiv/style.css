@@ -101,3 +101,31 @@
     margin: 0px 0px -7px -16px;
     /* background-color: red; */
 }
+
+.arrowr {
+    vertical-align: middle;
+    width: 40px;
+    /* height: 21px; */
+    margin: 12px 0px 10px -15px;
+}
+
+.arrowd {
+    vertical-align: middle;
+    width: 30px;
+    margin: 0px 0px -20px -15px;
+    height: 38px;
+}
+
+.arrowl {
+    vertical-align: middle;
+    width: 33px;
+    /* height: 21px; */
+    margin: 12px 0px 10px -15px;
+}
+
+.arrowu {
+    vertical-align: middle;
+    width: 30px;
+    margin: 0px 0px -20px -15px;
+    height: 32px;
+}
