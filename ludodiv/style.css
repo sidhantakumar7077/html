@@ -1,105 +1,129 @@
-            .contain {
-            width: 600px;
-            height: 600px;
-            background-color: rgb(252, 252, 252);
-        }
-        
-        .row {
-            margin-right: -15px;
-            margin-left: -16px;
-        }
-        
-        .row1 {
-            height: 39%;
-        }
-        
-        .rowmid {
-            height: 20%;
-        }
-        
-        .player {
-            height: 237px;
-        }
-        
-        .player1 {
-            background-color: red;
-        }
-        
-        .player2 {
-            background-color: blue;
-        }
-        
-        .player3 {
-            background-color: green;
-        }
-        
-        .player4 {
-            background-color: yellow;
-        }
-        
-        .inbox {
-            background-color: white;
-            height: 180px;
-            margin: 25px 23px 25px 25px;
-        }
-        
-        .danabox {
-            border: 1px solid black;
-            margin: 20px;
-            height: 45px;
-            width: 45px;
-        }
-        
-        .danar {
-            background-color: red;
-        }
-        
-        .danab {
-            background-color: blue;
-        }
-        
-        .danag {
-            background-color: green;
-        }
-        
-        .danay {
-            background-color: yellow;
-        }
-        
-        .danarun {
-            border: 1px solid black;
-            height: 39.5px;
-        }
-        
-        .danarun2 {
-            border: 1px solid black;
-            height: 40px;
-        }
-        
-        .danarun2.med {
-            padding: 0px 31.3px 0px 0px;
-        }
-        
-        .img {
-            /* vertical-align: middle; */
-            height: 38px;
-            width: 40px;
-            margin: 0px 0px 0px -15px;
-            /* background-color: red; */
-        }
-        
-        .star {
-            background-image: url('stari.png');
-            background-position: center;
-            background-size: cover;
-        }
-        
-        .arrow {
-            background-image: url('arrow.png');
-            background-position: center;
-            background-size: cover;
-        }
-        
-        .round1 {
-            width: 45px;
-            height: 45px;
+                .contain {
+                width: 600px;
+                height: 600px;
+                background-color: rgb(252, 252, 252);
+            }
+            
+            .row {
+                margin-right: -15px;
+                margin-left: -16px;
+            }
+            
+            .row1 {
+                height: 39%;
+            }
+            
+            .rowmid {
+                height: 20%;
+            }
+            
+            .player {
+                height: 237px;
+            }
+            
+            .player1 {
+                background-color: red;
+            }
+            
+            .player2 {
+                background-color: blue;
+            }
+            
+            .player3 {
+                background-color: green;
+            }
+            
+            .player4 {
+                background-color: yellow;
+            }
+            
+            .inbox {
+                background-color: white;
+                height: 180px;
+                margin: 25px 23px 25px 25px;
+            }
+            
+            .danabox {
+                border: 1px solid black;
+                margin: 20px;
+                height: 45px;
+                width: 45px;
+            }
+            
+            .danar {
+                background-color: red;
+            }
+            
+            .danab {
+                background-color: blue;
+            }
+            
+            .danag {
+                background-color: green;
+            }
+            
+            .danay {
+                background-color: yellow;
+            }
+            
+            .danarun {
+                border: 1px solid black;
+                height: 39.5px;
+            }
+            
+            .danarun2 {
+                border: 1px solid black;
+                height: 40px;
+            }
+            
+            .danarun2.med {
+                padding: 0px 31.3px 0px 0px;
+            }
+            
+            .img {
+                /* vertical-align: middle; */
+                height: 38px;
+                width: 40px;
+                margin: 0px 0px 0px -15px;
+                /* background-color: red; */
+            }
+            
+            .star {
+                background-image: url('stari.png');
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .arrowu {
+                background-image: url('arrowu.png');
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .arrowr {
+                background-image: url('arrowr.png');
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .arrowd {
+                background-image: url('arrowd.png');
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .arrowl {
+                background-image: url('arrowl.png');
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .arrowdback {
+                background-image: url('arrowdback.png');
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .round1 {
+                width: 45px;
+                height: 45px;
