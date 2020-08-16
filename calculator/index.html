@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="calculator">
+        <u>calculator</u>
+    </h1>
+
+    <label for="fnumber">First number:</label>
+    <input type="number" id="x"><br><br>
+    <label for="lnumber">last number</label>
+    <input type="number" id="y"><br><br>
+    <input type="submit" value="add" onclick="add()">
+    <input type="submit" value="multiplication" onclick="multiplication()">
+    <input type="submit" value="substraction" onclick="substraction()">
+    <input type="submit" value="divison" onclick="divison()">
+    <input type="submit" value="refresh" onclick="refresh()"><br><br>
+    <span>result</span>
+    <p id="result"></p>
+
+    <script>
+        function add() {
+            var a = document.getElementById("x").value;
+            var b = document.getElementById("y").value;
+
+            if (a == "") {
+                alert("enter the 1st number");
+                return false;
+            }
+            if (b == "") {
+                alert("enter the last number");
+                return false;
+            }
+            var r = parseInt(a) + parseInt(b);
+            document.getElementById("result").innerHTML = r;
+        }
+
+        function substraction() {
+            var a = document.getElementById("x").value;
+            var b = document.getElementById("y").value;
+            if (a == "") {
+                alert("enter the 1st number");
+                return false;
+            }
+            if (b == "") {
+                alert("enter the last number");
+                return false;
+            }
+            var r = parseInt(a) - parseInt(b);
+            document.getElementById("result").innerHTML = r;
+        }
+
+        function multiplication() {
+            var a = document.getElementById("x").value;
+            var b = document.getElementById("y").value;
+            if (a == "") {
+                alert("enter the 1st number");
+                return false;
+            }
+            if (b == "") {
+                alert("enter the last number");
+                return false;
+            }
+            var r = parseInt(a) * parseInt(b);
+            document.getElementById("result").innerHTML = r;
+        }
+
+        function divison() {
+            var a = document.getElementById("x").value;
+            var b = document.getElementById("y").value;
+            if (a == "") {
+                alert("enter the 1st number");
+                return false;
+            }
+            if (b == "") {
+                alert("enter the last number");
+                return false;
+            }
+            var r = parseInt(a) / parseInt(b);
+            document.getElementById("result").innerHTML = r;
+        }
+
+        function refresh() {
+            document.getElementById("x").value = "";
+            document.getElementById("y").value = "";
+            document.getElementById("result").innerHTML = "";
+        }
+    </script>
+
+</body>
+
+</html>
