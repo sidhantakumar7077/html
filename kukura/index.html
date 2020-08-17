@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>certificate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="text1">
+        <u>MARK LIST</u>
+    </h1>
+
+    <div class="container container1 ">
+
+        <div class="row row1">
+            <div class="col-sm-4 lol">SUBJECT</div>
+            <div class="col-sm-4 lol">F mark</div>
+            <div class="col-sm-4 lol">S mark</div>
+        </div>
+        <div class="row row1">
+            <div class="col-sm-4 lol">PHYSICS</div>
+            <div class="col-sm-4 lol">100</div>
+            <div class="col-sm-4 lol">
+                <input type="number" id="p" onkeyup="addMark()">
+
+
+            </div>
+
+        </div>
+        <div class="row row1">
+            <div class="col-sm-4 lol">CHEMISTRY</div>
+            <div class="col-sm-4 lol">100</div>
+            <div class="col-sm-4 lol">
+                <input type="number" id="c" onkeyup="addMark()"><br><br>
+
+
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-sm-4 lol">MATH</div>
+            <div class="col-sm-4 lol">100</div>
+            <div class="col-sm-4 lol">
+                <input type="number" id="m" onkeyup="addMark()"><br><br>
+
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-sm-4 lol">ENGLISH</div>
+            <div class="col-sm-4 lol">100</div>
+            <div class="col-sm-4 lol">
+                <input type="number" id="e" onkeyup="addMark()"><br><br>
+
+
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-sm-4 lol">IT</div>
+            <div class="col-sm-4 lol">100</div>
+            <div class="col-sm-4 lol">
+                <input type="number" id="i" onkeyup="addMark()"><br><br>
+
+
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-sm-4 lol ">Total</div>
+            <div class="col-sm-4 lol">
+                500
+
+            </div>
+            <div class="col-sm-4 lol">
+                <p id="tot"></p>
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-sm-8 lol ">PERCENTAGE</div>
+            <div class="col-sm-4 lol">
+                <p id="per"></p>
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-sm-8 lol ">GRADE</div>
+            <div class="col-sm-4 lol">
+                <p id="gra"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function addMark() {
+
+            var a = document.getElementById("p").value;
+            if (a == "") {
+                a = 0;
+            }
+            if (a > 100) {
+                a = 0;
+                document.getElementById("p").value = 0;
+                alert("please enter correct result.");
+
+            }
+
+
+            var b = document.getElementById("c").value;
+            if (b == "") {
+                (b = 0);
+            }
+            if (b > 100) {
+                document.getElementById("c").value = 0;
+                alert("please enter correct result.");
+
+            }
+            var c = document.getElementById("m").value;
+            if (c == "") {
+                (c = 0);
+            }
+            if (c > 100) {
+                document.getElementById("m").value = 0;
+                alert("please enter correct result.");
+            }
+            var d = document.getElementById("e").value;
+            if (d == "") {
+                (d = 0);
+            }
+            if (d > 100) {
+                document.getElementById("e").value = 0;
+                alert("please enter correct result.");
+            }
+            var e = document.getElementById("i").value;
+            if (e == "") {
+                (e = 0);
+            }
+            if (e > 100) {
+                document.getElementById("i").value = 0;
+                alert("please enter correct result.");
+            }
+            var to = parseInt(a) + parseInt(b) + parseInt(c) + parseInt(d) + parseInt(e);
+            document.getElementById("tot").innerHTML = to;
+            var percentage = percent(to, 500);
+            document.getElementById("per").innerHTML = percentage;
+
+            document.getElementById("gra").innerHTML = grade(percentage);
+        }
+
+        function percent(x, y) {
+
+            var result = parseInt(x) / parseInt(y) * 100;
+            return result;
+        }
+
+        function grade(x) {
+
+            var gra = "";
+            if (x >= 30 && x <= 50) {
+                gra = "C";
+
+            } else if (x > 50 && x <= 70) {
+                gra = "B";
+
+            } else if (x <= 100 && x > 70) {
+                gra = "A";
+
+            } else if (x < 30) {
+                gra = "f"
+            } else {
+                gra = 0;
+            }
+
+            return gra;
+        }
+    </script>
+</body>
+
+</html>
