@@ -1,0 +1,38 @@
+.con {
+    background-image: url('logpa.png');
+    opacity: 80%;
+    border: 1px solid black;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.font {
+    font-size: large;
+    font-weight: bold;
+    font-style: oblique;
+    color: yellow;
+}
+
+.logp {
+    padding-top: 180px;
+    color: white;
+}
+
+.logc {
+    color: white;
+}
+
+.butt {
+    background-color: #143d14;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid blue;
+    cursor: pointer;
+    width: 50%;
+}
+
+.colo {
+    color: red;
+}
