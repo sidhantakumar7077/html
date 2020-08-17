@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>login page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="con">
+
+
+    <div class="font">
+        <h1>LOGIN YOUR ACCOUNT</h2>
+    </div>
+    <div>
+        <label for="name" class="logp">USER NAME:</label>
+        <input type="text" id="userName"><br><br>
+        <label for="password" class="logc">PASSWORD</label>
+        <input type="password" id="passWord"><br><br>
+        <button type="submit" class="butt" onclick="login()">Login</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function login() {
+            var user = document.getElementById("userName").value;
+            if (user == "anil") {
+                document.getElementById("result").innerHTML = "sucessful";
+
+            } else {
+                document.getElementById("result").innerHTML = " <p class = colo> invalid user name or password </p>";
+                return result;
+            }
+            var pass = document.getElementById("passWord").value;
+            if (pass == "123456") {
+                document.getElementById("result").innerHTML = "sucessful";
+            } else {
+                document.getElementById("result").innerHTML = " <p  class =colo > invalid user name or password </p>";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
