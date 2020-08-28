@@ -1,0 +1,26 @@
+.contain {
+    width: 80%;
+    height: 400px;
+}
+
+.head {
+    margin-left: 155px;
+}
+
+.row1 {
+    height: 39px;
+}
+
+.row2 {
+    height: 60px;
+}
+
+.col {
+    border: 1px solid black;
+    height: 101%;
+}
+
+.text {
+    text-align: center;
+    padding-top: 10px;
+}

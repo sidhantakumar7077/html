@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>product</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2 class="head">
+        <u> product</u>
+    </h2>
+    <div class="container con">
+        <div class="row row1">
+            <div class="col-sm-5 colm">product</div>
+            <div class="col-sm-2 colm">price</div>
+            <div class="col-sm-2 colm">quantity</div>
+            <div class="col-sm-3 colm">total price</div>
+        </div>
+        <div class="row row1">
+            <div class="col-sm-5 colm">
+                <input type="text" id="pro1">
+            </div>
+            <div class="col-sm-2 colm">
+                <input type="number" id="price1">
+            </div>
+            <div class="col-sm-2 colm">
+                <input type="number" id="qua1" onkeyup="multipl1()" onkeyup="addprice()">
+            </div>
+            <div class="col-sm-3 colm">
+                <p id="tp1"></p>
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-sm-5 colm">
+                <input type="text" id="pro2">
+            </div>
+            <div class="col-sm-2 colm">
+                <input type="number" id="price2">
+            </div>
+            <div class="col-sm-2 colm">
+                <input type="number" id="qua2" onkeyup="multipl2()" onkeyup="addprice()">
+
+            </div>
+            <div class="col-sm-3 colm">
+                <p id="tp2"></p>
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-sm-9 colm">sub total</div>
+            <div class="col-sm-3 colm">
+                <p id="st1"></p>
+            </div>
+
+        </div>
+        <div class="row row1">
+            <div class="col-sm-9 colm">discount</div>
+            <div class="col-sm-3 colm">
+                <input type="number" id="dis" onkeyup="grandprice()">
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-sm-9 colm">grand total</div>
+            <div class="col-sm-3 colm">
+                <p id="gt"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function multipl1() {
+            var a = document.getElementById("price1").value;
+            var b = document.getElementById("qua1").value;
+            var tot = parseFloat(a) * parseInt(b);
+            subtotal = tot;
+            document.getElementById("tp1").innerHTML = tot;
+        }
+
+        function multipl2() {
+            var c = document.getElementById("price2").value;
+            var d = document.getElementById("qua2").value;
+            var tot = parseFloat(c) * parseInt(d);
+            document.getElementById("tp2").innerHTML = tot;
+
+
+
+            var tot1 = document.getElementById("tp1").innerHTML;
+            var tot2 = document.getElementById("tp2").innerHTML;
+            var stotal = addprice(tot1, tot2);
+            document.getElementById("st1").innerHTML = stotal;
+
+
+            var a = document.getElementById("st1").innerHTML;
+            var b = document.getElementById("dis").value;
+            var gtotal = grandprice(a, b);
+            document.getElementById("gt").innerHTML = gtotal;
+        }
+
+        function addprice(x, y) {
+            var result = parseFloat(x) + parseFloat(y);
+            return result;
+        }
+
+        function grandprice(x, y) {
+            var result = parseFloat(x) - parseFloat(y);
+            return result;
+        }
+    </script>
+
+</body>
+
+</html>

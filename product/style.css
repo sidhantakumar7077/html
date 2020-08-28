@@ -1,0 +1,25 @@
+.head {
+    text-align: center;
+    color: rgb(12, 148, 96);
+}
+
+.con {
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+.row1 {
+    border: 1px solid black;
+    height: 50px;
+}
+
+.colm {
+    border: 1px solid black;
+    height: 100%;
+    text-align: center;
+    font-style: oblique;
+    padding: 15px;
+    color: chocolate;
+    font-size: medium;
+}

@@ -1,0 +1,16 @@
+<label for="number"> enter table name:</label>
+<input type="number" id="tab"><br><br>
+<input type="submit" value="submit" onclick="table()">
+<p id="sub"></p>
+
+<script>
+    function table() {
+        var t = document.getElementById("tab").value;
+        var y = "";
+        var i;
+        for (i = 1; i < 11; i++) {
+            y += t + " x " + i + " = " + (t * i) + "<br>";
+        }
+        document.getElementById("sub").innerHTML = y;
+    }
+</script>

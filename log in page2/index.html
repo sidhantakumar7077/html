@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>login page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="wp logo.jpg" class="img">
+    <div class="container con">
+        <div>
+            <label for="name" class="logp user">username or Email Address</label><br>
+            <input type="text" class="box" placeholder="username or Email Address" id="userName"><br><br>
+            <label for="password" class="logc psw">password</label><br>
+            <input type="password" class="box" placeholder="password" id="passWord"><br><br>
+            <button type="submit" class="butt login" onclick="login()">Login</button>
+            <p id="result"></p>
+            <label>
+                <input  type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+        </div>
+    </div>
+    <p class="pgr">Lost Your passWord?</p>
+    <p class="pgr">Back to care community services society</p>
+
+    <script>
+        function login() {
+            var user = document.getElementById("userName").value;
+            if (user == "sidhanta123@gmail.com") {
+                document.getElementById("result").innerHTML = "sucessful";
+            } else {
+                document.getElementById("result").innerHTML = " <p class = color> invalid user name or password </p>";
+                return result;
+            }
+            var psw = document.getElementById("passWord").value;
+            if (psw == "8520") {
+                document.getElementById("result").innerHTML = "sucessful";
+            } else {
+                document.getElementById("result").innerHTML = " <p  class =color> invalid user name or password </p>";
+            }
+        }
+    </script>
+</body>
+
+</html>

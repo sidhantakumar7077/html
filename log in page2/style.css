@@ -1,0 +1,48 @@
+.con {
+    border: 1px solid black;
+    text-align: center;
+    height: 400px;
+    width: 25%;
+    margin-top: 50px;
+    padding-top: 60px;
+    font-size: large;
+    font-style: oblique;
+    background-color: rgb(245, 241, 234);
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+}
+
+.login {
+    float: right;
+    margin-right: 80px;
+    background-color: rgb(16, 172, 164);
+    margin-top: 10px;
+}
+
+.pgr {
+    margin-left: 590px;
+    margin-top: 10px;
+}
+
+.psw {
+    margin-left: -210px;
+}
+
+.user {
+    margin-left: -65px;
+}
+
+.color {
+    color: red;
+}
+
+.box {
+    width: 300px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>product</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2 class="head">
+        <u> product</u>
+    </h2>
+    <div class="container con">
+        <div class="row row1">
+            <div class="col-sm-5 colm">product</div>
+            <div class="col-sm-2 colm">price</div>
+            <div class="col-sm-2 colm">quantity</div>
+            <div class="col-sm-3 colm">total price</div>
+        </div>
+        <div class="row row1">
+            <div class="col-sm-5 colm">
+                <input type="text" id="product1">
+            </div>
+            <div class="col-sm-2 colm">
+                <input type="number" id="price1" onkeyup=" addProduct1()">
+            </div>
+            <div class="col-sm-2 colm">
+                <input type="number" id="quantity1" onkeyup=" addProduct1()">
+            </div>
+            <div class="col-sm-3 colm">
+                <p id="totalPrice1" onkeyup="allTotal()"></p>
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-sm-5 colm">
+                <input type="text" id="product2">
+            </div>
+            <div class="col-sm-2 colm">
+                <input type="number" id="price2" onkeyup="addProduct2()">
+            </div>
+            <div class="col-sm-2 colm">
+                <input type="number" id="quantity2" onkeyup="addProduct2()">
+
+            </div>
+            <div class=" col-sm-3 colm">
+                <p id="totalPrice2" onkeyup="allTotal()"></p>
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-sm-9 colm">sub total</div>
+            <div class="col-sm-3 colm">
+                <p id="subTotal"></p>
+            </div>
+
+        </div>
+        <div class="row row1">
+            <div class="col-sm-9 colm">discount</div>
+            <div class="col-sm-3 colm">
+                <input type="number" id="discount">
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-sm-9 colm">grand total</div>
+            <div class="col-sm-3 colm">
+                <p id="grandTotal"></p>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function addProduct1() {
+            var price = document.getElementById("price1").value;
+            var quantity = document.getElementById("quantity1").value;
+            var total = parseFloat(price) * parseInt(quantity);
+            document.getElementById("totalPrice1").innerHTML = total;
+        }
+
+        function addProduct2() {
+            var pricee = document.getElementById("price2").value;
+            var quantityy = document.getElementById("quantity2").value;
+            var total2 = parseFloat(pricee) * parseInt(quantityy);
+            document.getElementById("totalPrice2").innerHTML = total2;
+
+        }
+
+        function allTotal() {
+            var totalPrice11 = document.getElementById("totalPrice1").innerHTML;
+            var totalPrice22 = document.getElementById("totalPrice2").innerHTML;
+            var subTotall = parseFloat(totalPrice11) + parseInt(totalPrice22);
+            document.getElementById("subTotal").innerHTML = subTotall;
+        }
+    </script>
+</body>
+
+</html>
