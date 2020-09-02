@@ -1,0 +1,37 @@
+.logo {
+    width: 105px;
+    height: 100px;
+    float: left;
+    margin-top: 20px;
+}
+
+.contain {
+    border: 1px solid black;
+    height: auto;
+}
+
+.head {
+    font-style: italic;
+    color: red;
+    font-size: x-large;
+}
+
+.box {
+    border: 1px solid black;
+    height: 130px;
+    width: 110px;
+    float: right;
+    margin: 17px;
+}
+
+.head2 {
+    border: 2px solid rgb(219, 92, 92);
+    text-align: center;
+    width: 323px;
+    margin-left: 354px;
+    color: cadetblue;
+}
+
+.mar {
+    margin: 0 0 10px 0;
+}
